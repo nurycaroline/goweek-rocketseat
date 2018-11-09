@@ -1,0 +1,125 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-11-09T12:10:08.836Z",
+	"__export_source": "insomnia.desktop.app:v6.2.0",
+	"resources": [
+		{
+			"_id": "wrk_5add760bda364926a07dd594b68d5085",
+			"created": 1541520505820,
+			"description": "",
+			"modified": 1541520505820,
+			"name": "Go Week",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_aa5d00e061154bcd9c4c40c4424b9da1",
+			"color": null,
+			"created": 1541520505830,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1541520505830,
+			"modified": 1541520505830,
+			"name": "New Environment",
+			"parentId": "wrk_5add760bda364926a07dd594b68d5085",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_fecff436c15d4cc0b29fe71ea531a68c",
+			"cookies": [],
+			"created": 1541520505832,
+			"modified": 1541520505832,
+			"name": "Default Jar",
+			"parentId": "wrk_5add760bda364926a07dd594b68d5085",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_e033c0bdf5554cb8aee151173b181e85",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1541520532797,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_061c3283db864162b9fca6c53f1c64d4",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541520532797,
+			"method": "GET",
+			"modified": 1541764523365,
+			"name": "Listar Tweets",
+			"parameters": [],
+			"parentId": "wrk_5add760bda364926a07dd594b68d5085",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/tweets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2d92d72fedd84fe3bbd88b267285a905",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"author\": \"Nurielly\",\n  \"content\": \"Tweet in go week2\"\n}"
+			},
+			"created": 1541520693658,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_f4a8832a964c455ca583a508fafca078",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541520693658,
+			"method": "POST",
+			"modified": 1541764510368,
+			"name": "Criar Tweet",
+			"parameters": [],
+			"parentId": "wrk_5add760bda364926a07dd594b68d5085",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/tweets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_19ce210ba25c455a9e33d3cbfdc86431",
+			"authentication": {},
+			"body": {},
+			"created": 1541759810537,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1541759810537,
+			"method": "POST",
+			"modified": 1541764536613,
+			"name": "Like",
+			"parameters": [],
+			"parentId": "wrk_5add760bda364926a07dd594b68d5085",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/likes/5be5759f7da322050f75c38f",
+			"_type": "request"
+		}
+	]
+}
